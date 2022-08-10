@@ -14,18 +14,6 @@ button.addEventListener("click", (event) =>{
     getNextQuote()
 })
 
-// async function getNextQuote() {
-//     const response = await fetch("https://api.quotable.io/random?tags=inspirational")
-//     const data = await response.json()
-    
-//         console.log(data)
-//         if (response.ok) {
-//             quote.innerHTML = data.content
-//         } else {
-//             quote.innerHTML = "An error occurred"
-//             console.log(data)
-//         }        
-// }
 
 function getNextQuote() {
     fetch("https://api.quotable.io/random?tags=inspirational")
@@ -36,8 +24,23 @@ function getNextQuote() {
         .catch(error => console.log(error))
 }
 
+const form = document.getElementById("gratitude-form")
+form.addEventListener("submit", (event) => {
+    event.preventDefault()
+    // console.log(event.target)
+    // after submit, I want the text to display on the DOM
+    // How do I get the text from this form
+    console.log(event.target.children[1])
+    event.target.children[1].value = "x"
 
-fetch("https://imsea.herokuapp.com/api/1?q=sunset",{mode: 'cors'})
-    .then((response) => response.json())
-    .then((data) => console.log(data))
-    .catch(error => console.log(error)) 
+})    
+
+
+
+
+
+
+// fetch("https://imsea.herokuapp.com/api/1?q=sunset",{mode: 'cors'})
+//     .then((response) => response.json())
+//     .then((data) => console.log(data))
+//     .catch(error => console.log(error)) 
