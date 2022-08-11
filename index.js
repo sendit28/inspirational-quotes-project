@@ -14,7 +14,6 @@ button.addEventListener("click", (event) =>{
     getNextQuote()
 })
 
-
 function getNextQuote() {
     fetch("https://api.quotable.io/random?tags=inspirational")
         .then((response) => response.json())
@@ -24,15 +23,24 @@ function getNextQuote() {
         .catch(error => console.log(error))
 }
 
+
 const form = document.getElementById("gratitude-form")
 form.addEventListener("submit", (event) => {
     event.preventDefault()
     // console.log(event.target)
-    // after submit, I want the text to display on the DOM
+    // // after submit, I want the text to display on the DOM
     // How do I get the text from this form
-    console.log(event.target.children[1])
-    event.target.children[1].value = "x"
-
+    // console.log(event.target.children[1])
+   const gratitude = event.target.children[1].value
+   const p = document.createElement("p")
+   p.innerText = gratitude
+   const container = document.getElementById("gratitude_container")
+   container.append(p)  //this is where text appears on the DOM
+   //Why is it happening multiple times?
+   
+   
+   
+   
 })    
 
 
