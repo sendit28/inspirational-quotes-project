@@ -1,5 +1,5 @@
 p {
-    color: red;
+    color: brown;    
     width: 500px;
     border: 1px solid black;
     font-size: 20px; 
@@ -10,11 +10,15 @@ p {
 body {
     width: 600px;
     margin: 0 auto;
-    background-color: hsl(151, 18%, 56%);
+    background-color: hsl(149, 30%, 81%);
     padding: 0 20px 20px 20px;
-    border: 5px solid rgb(172, 220, 207);
-    
+    /* border: 5px solid rgb(172, 220, 207); */
+    border-radius: 40px;
+  }
 
+  button {
+    border-radius: 20px;
+    padding: 5px;
   }
 
 .body-container {
@@ -22,13 +26,25 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center top;
-
-  /* background-color: #cccccc; */
+/* background-color: #cccccc; */
 }
 
 .main-container {
-  background-color: hsl(151, 18%, 56%);
-  opacity: 80%;
+  background-color: hsl(151, 13%, 65%);
+    opacity: 80%;
+    padding: 30px;
+    border: 5px rgb(48, 93, 65) solid;
+    border-radius: 40px;
+}
+
+input {
+  border-radius: 20px;
+  margin: 5px;
+  padding: 5px;
+}
+
+p.body-container {
+  border-radius: 20px;
 }
 
   /* img {
