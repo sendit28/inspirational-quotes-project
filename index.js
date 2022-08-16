@@ -27,21 +27,32 @@ function getNextQuote() {
 const form = document.getElementById("gratitude-form")
 form.addEventListener("submit", (event) => {
     event.preventDefault()
+    const container = document.getElementById("gratitude_container")
+    container.innerHTML = ""
     // console.log(event.target)
     // // after submit, I want the text to display on the DOM
     // How do I get the text from this form
     // console.log(event.target.children[1])
-   const gratitude = event.target.children[1].value
-   const p = document.createElement("p")
-   p.innerText = gratitude
-   const container = document.getElementById("gratitude_container")
-   container.append(p)  //this is where text appears on the DOM
+   const gratitude1 = event.target.messageOne.value
+   const p1 = document.createElement("p")
+   p1.innerText = gratitude1
+   
+   container.append(p1)  //this is where text appears on DOM
    //Why is it happening multiple times?
    
+   const gratitude2 = event.target.messageTwo.value
+   const p2 = document.createElement("p")
+   p2.innerText = gratitude2
+   container.append(p2)  //this is where text appears on DOM
+
+   const gratitude3 = event.target.messageThree.value
+   const p3 = document.createElement("p")
+   p3.innerText = gratitude3
    
+   container.append(p3)  //this is where text appears on DOM
+   form.reset()
    
-   
-})    
+})   
 
 
 
