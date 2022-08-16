@@ -12,21 +12,19 @@ body {
     margin: 0 auto;
     background-color: hsl(149, 30%, 81%);
     padding: 0 20px 20px 20px;
-    /* border: 5px solid rgb(172, 220, 207); */
     border-radius: 40px;
-  }
+}
 
-  button {
+button {
     border-radius: 20px;
     padding: 5px;
-  }
+}
 
 .body-container {
   background-image: url(/images/my-back.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center top;
-/* background-color: #cccccc; */
 }
 
 .main-container {
@@ -43,11 +41,6 @@ input {
   padding: 5px;
 }
 
-p.body-container {
-  border-radius: 20px;
-}
 
-  /* img {
-    display: block;
-    margin: 0 auto;
-  } */
+
+  
