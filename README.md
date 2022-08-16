@@ -16,11 +16,6 @@ Clone this repository by using git@github.com:sendit28/inspirational-quotes-proj
 ```bash
 $ git clone git@github.com:sendit28/inspirational-quotes-project.git
 ```
-https://npmjs.org/
-
-```bash
-$ npm install
-```
 
 ## Usage
 
