@@ -21,9 +21,6 @@ $ git clone git@github.com:sendit28/inspirational-quotes-project.git
 
 The vision for this project was creating a space for inspirational quotes.  Each time a click is pressed, a new inspirational quote is generated and appears on the page.  Below that is a "Gratitude Check-In".  Here you can input three things you are grateful for.  In the future, upon completion of the three grateful items, an affirmation quote paired with an inspirational photo will generate onto the page.  This page is a self-care practice.
 
-API Reference "https://api.quotable.io/random?tags=inspirational"
-
-
 
 ## References
 "https://api.quotable.io/random?tags=inspirational"
