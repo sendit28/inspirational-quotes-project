@@ -8,25 +8,39 @@
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
-<body>
-    <div>
-        <header>
-            <h1>Inspirational Quotes</h1>
-        </header>
-        <p id="quote"></p>
-        <button id="btn-new-quote">Inspire Me!</button>
-    </div> 
-    <div class="container">
-        <header>
-            <h2>Gratitude Check-In</h2>
-        </header>
-        <form id="gratitude-form">
-            <label for= "msg">Gratitude One</label>
-            <input id= "msg" name= "user_message"></input>
-            <input type="submit" class="btn" value="submit">
-        </form>
-        <div id="gratitude_container">
+<body class="body-container">
+    <div class="main-container">
+        <div>
+            <header>
+                <h1>Inspirational Quotes</h1>
+            </header>
+            <p id="quote">Click below to find your inspiration.</p>
+            <button id="btn-new-quote">Inspire Me!</button>
+        </div> 
+        <div class="container">
+            <header>
+                <h2>Gratitude Check-In</h2>
+            </header>
+            <form id="gratitude-form">
+                <div>
+                    <P>List three things you are grateful for.</P>
+                    <label for= "msgOne">Gratitude One</label>
+                    <input id= "msgOne" name= "messageOne"></input>
+                </div>
+                <div>
+                    <label for= "msgTwo">Gratitude Two</label>
+                    <input id= "msgTwo" name= "messageTwo"></input>
+                </div>
+                <div>
+                    <label for= "msgThree">Gratitude Three</label>
+                    <input id= "msgThree" name= "messageThree"></input>
+                </div>
+                
+                <input type="submit" class="btn" value="submit">
+            </form>
+            <div id="gratitude_container">
+            </div>
         </div>
-    </div>   
-</body>
+    </div>  
+    </body>
 </html>
