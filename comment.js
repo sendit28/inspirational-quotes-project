@@ -1,4 +1,4 @@
-async function getNextQuote() {
+// async function getNextQuote() {
     //     const response = await fetch("https://api.quotable.io/random?tags=inspirational")
     //     const data = await response.json()
         
